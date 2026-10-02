@@ -1,0 +1,41 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Josué De Oliveira Ferreira
+  email = grumec92@gmail.com
+; email = josue.ferreira@ipqm.mb
+signingKey = 83EBCCAF9D72E0EB
+[core]
+    editor = nvim
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
+
+[merge]
+    conflictstyle = diff3
+[push]
+    autoSetupRemote = true
+[diff]
+    colorMoved = default
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[alias]
+	st = status -s
+	ci = commit
+	pr = pull --rebase
+  ps = push
+  sw = switch
+	co = checkout
+	cod = checkout
+	rh = reset
+	aa = add -A
