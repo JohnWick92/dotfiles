@@ -14,7 +14,7 @@ Use gnu stow to set the files, you must update git to match yours config
 
 ```bash
 # delete .zshrc to avoid conflicts
-git clone https://github.com/JohnWick92/dotfiles.git ~/.dotfiles
+git clone --recurse-submodules https://github.com/JohnWick92/dotfiles.git ~/.dotfiles
 rm ~/.zshrc
 cd ~/.dotfiles && stow -R */
 ```
