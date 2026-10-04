@@ -76,7 +76,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 plugins=(
   git composer laravel gpg-agent
   zsh-autosuggestions podman
-  docker mise rust kubectl
+  docker mise rust kubectl mvn
   dotenv zoxide starship kompose
   fast-syntax-highlighting)
 
@@ -132,3 +132,5 @@ zle -N edit-command-line
 # Bind it to Ctrl+X, Ctrl+E
 bindkey '^x^e' edit-command-line
 alias lzp='lazypodman'
+export GOBIN=~/.local/bin
+export GOPATH=~/.local/share/go
