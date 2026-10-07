@@ -3,9 +3,10 @@ return {
     "stevearc/conform.nvim",
     opts = function(_, opts)
       opts.formatters_by_ft = opts.formatters_by_ft or {}
-      opts.formatters_by_ft.java = { "google-java-format" }
+      -- Alterado de google-java-format para palantir-java-format
+      opts.formatters_by_ft.java = { "palantir-java-format" }
       opts.formatters = opts.formatters or {}
-      opts.formatters["google-java-format"] = {}
+      opts.formatters["palantir-java-format"] = {}
     end,
   },
   {
@@ -39,6 +40,8 @@ return {
       "neovim/nvim-lspconfig",
       "mfussenegger/nvim-jdtls",
     },
+    -- Carrega o plugin APENAS quando você abrir um arquivo .java
+    ft = "java",
     config = function()
       local springboot_nvim = require("springboot-nvim")
       vim.keymap.set("n", "<leader>Jr", springboot_nvim.boot_run, { desc = "Spring Boot Run Project" })
