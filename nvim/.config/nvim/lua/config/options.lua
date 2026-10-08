@@ -7,3 +7,4 @@ vim.opt.showtabline = 2
 
 -- Força cada janela dividida a renderizar suas próprias bordas de status
 vim.opt.laststatus = 3
+vim.opt.clipboard = "unnamedplus"
