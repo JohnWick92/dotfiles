@@ -9,6 +9,11 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("fcitx5 -d")
 end)
 -- DMS_STARTUP_END
+hl.env(
+	"XDG_DATA_DIRS",
+	os.getenv("HOME")
+		.. "/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share"
+)
 
 hl.config({
 	input = {
