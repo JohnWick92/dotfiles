@@ -1,0 +1,5 @@
+require('options')
+require('colorscheme')
+require('fuzzy')
+require('treesitter')
+require('lsp')
