@@ -10,7 +10,7 @@ require('mason-lspconfig').setup({
   automatic_enable = true,
 })
 
-require('lsp.lua_ls')
+require('plugins.lsp.lua_ls')
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
