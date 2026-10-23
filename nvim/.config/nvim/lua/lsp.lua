@@ -18,13 +18,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     if client and client:supports_method('textDocument/completion') then
       vim.lsp.completion.enable(true, client.id, ev.buf, {
-        autotrigger = true,
+        autotrigger = false,
       })
     end
 
     local opts = { buffer = ev.buf, remap = false }
 
-    -- Keymaps LSP
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)

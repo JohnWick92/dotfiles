@@ -1,0 +1,12 @@
+{
+  "hererocks": { "branch": "master", "commit": "5d77b0bafc8b96f82355ca2ce5637c00d78a065c" },
+  "lazy.nvim": { "branch": "main", "commit": "85c7ff3711b730b4030d03144f6db6375044ae82" },
+  "lua-utils.nvim": { "branch": "main", "commit": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd" },
+  "luarocks.nvim": { "branch": "main", "commit": "1db9093915eb16ba2473cfb8d343ace5ee04130a" },
+  "neorg": { "branch": "main", "commit": "a09e0bb9b32e2d0406d4503ae8c1a7ad2ca83eae" },
+  "nui.nvim": { "branch": "main", "commit": "10fc361835c856ba4233ef5ea135b919bf3dce97" },
+  "nvim-nio": { "branch": "master", "commit": "edcc181a875301dd21840189aa2f2f9ad69fc172" },
+  "pathlib.nvim": { "branch": "main", "commit": "a0d3dbbe00ce6a546426b1aed3838a82fe6bfc42" },
+  "tree-sitter-norg": { "branch": "main", "commit": "d7edfaf89198aab652c7a1f0f818196efedaccfb" },
+  "tree-sitter-norg-meta": { "branch": "main", "commit": "729d4e54fb881ba0ddf0f925ec78401354c7c6db" }
+}
