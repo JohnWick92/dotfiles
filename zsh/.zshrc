@@ -113,6 +113,8 @@ eval "$(mise activate zsh)"
 
 alias vpnup="nmcli connection up josue_safa"
 alias vpndw="nmcli connection down josue_safa"
+fpath=(~/.zsh/completion $fpath)
+autoload -U compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/$USER/.local/share/mise/installs/terraform/latest/terraform terraform
 
@@ -132,5 +134,14 @@ zle -N edit-command-line
 # Bind it to Ctrl+X, Ctrl+E
 bindkey '^x^e' edit-command-line
 alias lzp='lazypodman'
+alias lzd='lazydocker'
+alias lzs='lazyssh'
 export GOBIN=~/.local/bin
 export GOPATH=~/.local/share/go
+# Flatpak path fix
+if [ -d /var/lib/flatpak/exports/share ]; then
+    export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+fi
+if [ -d "$HOME/.local/share/flatpak/exports/share" ]; then
+    export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
+fi
