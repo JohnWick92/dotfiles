@@ -1,0 +1,8 @@
+require('plugins.oil')
+require('plugins.colorscheme')
+require('plugins.fuzzy')
+require('plugins.treesitter')
+require('plugins.org-nvim')
+require('plugins.lsp')
+require('plugins.statusline')
+require('plugins.tmux')
