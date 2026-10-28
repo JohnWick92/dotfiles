@@ -11,4 +11,4 @@ local function multicursors_clear_all()
 end
 
 vim.keymap.set('n', '<leader>qq', multicursors_clear_all, { desc = 'Clear all multicursors' })
-
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
