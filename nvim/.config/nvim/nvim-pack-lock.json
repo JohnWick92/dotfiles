@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "autoclose.nvim": {
+      "rev": "bcad8e84d9cd78ba73433cb396b68e489af11e31",
+      "src": "https://github.com/m4xshen/autoclose.nvim"
+    },
     "lua-utils.nvim": {
       "rev": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd",
       "src": "https://github.com/nvim-neorg/lua-utils.nvim"
