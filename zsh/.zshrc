@@ -136,6 +136,7 @@ bindkey '^x^e' edit-command-line
 alias lzp='lazypodman'
 alias lzd='lazydocker'
 alias lzs='lazyssh'
+alias upd='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && flatpak update -y && mise up'
 export GOBIN=~/.local/bin
 export GOPATH=~/.local/share/go
 # Flatpak path fix
