@@ -10,9 +10,11 @@ require('mason-lspconfig').setup({
   automatic_enable = true,
 })
 
+-- Applying config files
 require('plugins.lsp.lua_ls')
 require('plugins.lsp.java')
 require('plugins.lsp.meson')
+require('plugins.lsp.latex')
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
