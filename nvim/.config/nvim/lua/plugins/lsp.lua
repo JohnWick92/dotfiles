@@ -46,7 +46,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     -- CodeLens (shows references and actions above functions)
     if client:supports_method('textDocument/codeLens') then
-      vim.lsp.codelens.refresh({ bufnr = bufnr })
+      vim.lsp.codelens.enable(true, { bufnr = bufnr })
     end
 
     -- Document color (highlights hex/rgb color codes)
