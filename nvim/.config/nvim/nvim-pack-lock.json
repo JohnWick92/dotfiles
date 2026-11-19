@@ -4,6 +4,10 @@
       "rev": "bcad8e84d9cd78ba73433cb396b68e489af11e31",
       "src": "https://github.com/m4xshen/autoclose.nvim"
     },
+    "gopher.nvim": {
+      "rev": "f397bed1c35f29f4f85d60a210650e677a8c5cb4",
+      "src": "https://github.com/olexsmir/gopher.nvim"
+    },
     "lualine.nvim": {
       "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"

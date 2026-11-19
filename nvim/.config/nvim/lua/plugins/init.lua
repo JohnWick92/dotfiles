@@ -1,4 +1,5 @@
 require('plugins.oil')
+require('plugins.gopher')
 require('plugins.colorscheme')
 require('plugins.fuzzy')
 require('plugins.treesitter')
