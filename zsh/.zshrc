@@ -75,7 +75,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git composer laravel gpg-agent
-  zsh-autosuggestions podman
+  zsh-autosuggestions podman vagrant
   docker mise rust kubectl mvn
   dotenv zoxide starship kompose
   fast-syntax-highlighting)
