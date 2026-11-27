@@ -9,6 +9,7 @@ require('plugins.lsp.lua_ls')
 require('plugins.lsp.java')
 require('plugins.lsp.meson')
 require('plugins.lsp.latex')
+require('plugins.lsp.gopls')
 
 -- 2. Configure global diagnostics display
 vim.diagnostic.config({
